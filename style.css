@@ -2,11 +2,15 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
   max-width: 100%;
   display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .personal-info {
@@ -14,16 +18,19 @@ body {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .personal-info h1 {
   font-size: 36px;
   margin-bottom: 5px;
+  color: #333;
 }
 
 .subtitle {
   font-size: 18px;
   margin-bottom: 10px;
+  color: #666;
 }
 
 .content {
@@ -31,6 +38,7 @@ body {
   background-color: #f9f9f9;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
 
 .section {
@@ -55,4 +63,15 @@ ul {
 
 ul li {
   margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      margin: 10px;
+  }
+
+  .personal-info {
+      margin-bottom: 20px;
+  }
 }
