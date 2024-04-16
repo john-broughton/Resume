@@ -50,6 +50,12 @@ body {
   color: #fff; /* Changed section title text color to white */
 }
 
+.black-section-title{
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
 .section-content {
   margin-bottom: 20px;
   line-height: 1.6;
